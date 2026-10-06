@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box
+    </title>
+
+   <style>
+    
+        .flex-container {
+             display: flex;
+            /* flex-direction: column; Change to column for vertical layout */
+            /* justify-content: center; */
+            /* justify-content:end; */
+            justify-content: space-between;
+            /* justify-content:space-around; */
+            /* justify-content: space-evenly; */
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: center;
+
+          /* justify-content: space-around;
+            align-items: center; */
+            flex-direction: row;
+            height: 100vh;
+            background-color: #231515;
+
+        }
+
+        /* .flex-item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            font-size: 1.5em;
+            text-align: center;
+            border-radius: 5px;
+        } */
+
+        .flex-item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            font-size: 1.5em;
+            text-align: center;
+            border-radius: 5px;
+            margin: 10px; /* Add some margin between items */
+            height: 150px; /* Set a fixed height for the items */
+            width: 150px; /* Set a fixed width for the items */
+
+        }
+
+        .flex-item:nth-child(odd) {
+            background-color: #2196F3; /* Change color for odd items */
+        }
+
+
+   </style>
+        
+
+    
+</head>
+<body>
+    <section class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+        <div class="flex-item">Item 4</div>
+        <div class="flex-item">Item 5</div>
+        <div class="flex-item">Item 6</div>
+         <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+        <div class="flex-item">Item 4</div>
+        <div class="flex-item">Item 5</div>
+        <div class="flex-item">Item 6</div>
+         <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+        <div class="flex-item">Item 4</div>
+        <div class="flex-item">Item 5</div>
+        <div class="flex-item">Item 6</div>
+    </section>
+    
+</body>
+</html>
