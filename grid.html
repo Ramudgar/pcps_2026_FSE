@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Grid Layout Without grid-area</title>
+
+    <style>
+      .grid-container {
+        display: grid;
+
+        grid-template-columns: 1fr 2fr; /* Two columns */
+
+        grid-template-rows: auto 1fr auto; /* Three rows */
+
+        gap: 10px;
+
+        padding: 10px;
+
+        background-color: #e0e0e0;
+
+        border: 2px solid #ccc;
+
+        border-radius: 10px;
+      }
+
+      /* Style for all boxes */
+
+      .header,
+      .sidebar,
+      .content,
+      .footer {
+        padding: 20px;
+
+        border-radius: 5px;
+
+        border: 2px solid #ddd;
+
+        color: #fff;
+
+        font-size: 1.2em;
+
+        text-align: center;
+      }
+
+      /* Positioning each item using line numbers */
+
+      .header {
+        grid-column: 1 / 3; /* Span both columns */
+
+        grid-row: 1; /* First row */
+
+        background-color: #4caf50;
+      }
+
+      .sidebar {
+        grid-column: 1; /* Left column */
+
+        grid-row: 2; /* Second row */
+
+        background-color: #2196f3;
+      }
+
+      .content {
+        grid-column: 2; /* Right column */
+
+        grid-row: 2; /* Second row */
+
+        background-color: #ff9800;
+      }
+
+      .footer {
+        grid-column: 1 / 3; /* Span both columns */
+
+        grid-row: 3; /* Third row */
+
+        background-color: #9c27b0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <div class="header">Header</div>
+
+      <div class="sidebar">Sidebar</div>
+
+      <div class="content">Content</div>
+
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>
